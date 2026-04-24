@@ -8,7 +8,6 @@ A complete full-stack finance management application that helps individuals and 
 |----------|------|
 | Live Demo | https://finance-dashboard-ashy-six.vercel.app |
 | Backend API | https://finance-backend-api-74z9.onrender.com |
-| GitHub Repository | https://github.com/LinetOsorelapiyolinet/finance-app |
 | Health Check | https://finance-backend-api-74z9.onrender.com/health |
 
 ### Test Credentials
