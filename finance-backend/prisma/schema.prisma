@@ -1,0 +1,58 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Role {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+  users       User[]
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  @@map("roles")
+}
+
+model User {
+  id           Int           @id @default(autoincrement())
+  email        String        @unique
+  password     String
+  name         String
+  roleId       Int           @map("role_id")
+  role         Role          @relation(fields: [roleId], references: [id])
+  status       Status        @default(active)
+  transactions Transaction[]
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+  
+  @@map("users")
+}
+
+model Transaction {
+  id          Int            @id @default(autoincrement())
+  userId      Int            @map("user_id")
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  amount      Float
+  type        TransactionType
+  category    String
+  date        DateTime
+  description String?
+  createdAt   DateTime       @default(now()) @map("created_at")
+  updatedAt   DateTime       @updatedAt @map("updated_at")
+  
+  @@map("transactions")
+}
+
+enum Status {
+  active
+  inactive
+}
+
+enum TransactionType {
+  income
+  expense
+}
