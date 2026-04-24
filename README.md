@@ -1,5 +1,7 @@
 # Finance Dashboard - Personal Finance Management System
 
+**By Michelle Mola | Kenya Institute of Software Engineering**
+
 A complete full-stack finance management application that helps individuals and businesses track income, monitor expenses, and make informed financial decisions through beautiful, interactive dashboards.
 
 ## Quick Links
@@ -219,4 +221,4 @@ ISC License - Free for personal and commercial use
 
 If you find this project useful, please give it a star on GitHub! It helps others discover the project and motivates continued development.
 
-Made with ❤️ by Michell Mola | kenya institue of software engineering Assignment project
+Made with ❤️ by Michelle Mola | Kenya Institute of Software Engineering
