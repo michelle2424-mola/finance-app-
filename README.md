@@ -1,10 +1,12 @@
+EXAM: JP INTERNATIONAL EXAM, SUBMISSION DATE: 24th April 2026, Project type: Fullstack web application.
+
 NAME: MICHELLE ANYANGO MOLA | INSTITUTION: KENYA INSTITUTE OF SOFTWARE ENGINEERING AND PROFESSIONAL STUDIES
 
 # Finance Dashboard - Personal Finance Management System
 
 **By Michelle Mola | Kenya Institute of Software Engineering**
 
-A complete full-stack finance management application that helps individuals and businesses track income, monitor expenses, and make informed financial decisions through beautiful, interactive dashboards.
+A complete full-stack finance management application that helps individuals and businesses track income, monitor expenses, and make informed financial decisions through beautiful, interactive dashboards. Users can create accounts, categorize transactions, view detailed analytics, and understand their spending patterns through intuitive charts and filtering options.
 
 ## Quick Links
 
